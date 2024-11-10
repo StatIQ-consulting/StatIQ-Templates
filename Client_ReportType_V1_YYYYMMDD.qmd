@@ -3,9 +3,9 @@ title: "Document Title" # e.g. Analysis Report, Project Quotation, etc.
 subtitle: "Project Title"
 author: "Stat IQ Consulting | [Consultant's Name]"
 format:
-  StatIQ-Templates-html: default
-  StatIQ-Templates-pdf: default
-  StatIQ-Templates-docx: default
+  StatIQ-consulting/StatIQ-Templates-html: default
+  StatIQ-consulting/StatIQ-Templates-pdf: default
+  StatIQ-consulting/StatIQ-Templates-docx: default
 date: last-modified
 bibliography: references.bib
 execute: 
