@@ -3,14 +3,21 @@ title: "Document Title" # e.g. Analysis Report, Project Quotation, etc.
 subtitle: "Project Title"
 author: "Stat IQ Consulting | [Consultant's Name]"
 format:
-  StatIQ-html: default
-  StatIQ-pdf: default
-  StatIQ-docx: default
+  StatIQ-Templates-html: default
+  StatIQ-Templates-pdf: default
+  StatIQ-Templates-docx: default
 date: last-modified
 bibliography: references.bib
 execute: 
   echo: false # Hide codes
 ---
+
+::: {.callout-tip}
+## Getting Started
+
+For more information on the template structure and customization options, refer to the [README](https://github.com/StatIQ-consulting/StatIQ-Templates/blob/main/README.md) in the repository.
+:::
+
 
 ```{r library-imports}
 #| warning: false
