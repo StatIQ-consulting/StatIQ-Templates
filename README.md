@@ -40,9 +40,9 @@ title: "Document Title" # e.g., Analysis Report, Project Quotation, etc.
 subtitle: "Project Title"
 author: "Stat IQ Consulting | [Consultant's Name]"
 format:
-  StatIQ-html: default
-  StatIQ-pdf: default
-  StatIQ-docx: default
+  StatIQ-consulting/StatIQ-Templates-html: default
+  StatIQ-consulting/StatIQ-Templates-pdf: default
+  StatIQ-consulting/StatIQ-Templates-docx: default
 date: last-modified
 bibliography: references.bib
 execute: 
@@ -100,9 +100,9 @@ title: "Document Title" # Document type, e.g., Analysis Report, Project Quotatio
 subtitle: "Project Title" # Specify the project or report title.
 author: "Stat IQ Consulting | [Consultant's Name]" # Customize with the consultant’s name.
 format:
-  StatIQ-html: default # Applies the custom HTML template.
-  StatIQ-pdf: default  # Applies the custom PDF template.
-  StatIQ-docx: default # Applies the custom DOCX template.
+  StatIQ-consulting/StatIQ-Templates-html: default  # Applies the custom HTML template.
+  StatIQ-consulting/StatIQ-Templates-pdf: default   # Applies the custom DOCX template.
+  StatIQ-consulting/StatIQ-Templates-docx: default  # Applies the custom DOCX template.
 date: last-modified # Automatically updates to the last modified date.
 bibliography: references.bib # Bibliography file for references.
 execute: 
