@@ -1,0 +1,24 @@
+title: StatIQ-Templates
+author: ajhoneslacubtan
+version: 1.0.0
+quarto-required: ">=1.5.0"
+contributes:
+  formats:
+    html:
+      toc: true
+      toc-depth: 2
+      logo: logo.png
+      theme: [cosmo, custom.scss]
+      embed-resources: true
+      template-partials:
+        - title-block.html
+    pdf:
+      include-in-header:
+        - "statiqPDF.tex"
+      include-before-body:
+        - "pagestyle.tex"
+      toc: false
+      linkcolor: highlight
+      urlcolor: highlight
+    docx:
+      reference-doc: custom-reference-doc.docx

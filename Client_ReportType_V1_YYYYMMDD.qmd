@@ -1,0 +1,69 @@
+---
+title: "Document Title" # e.g. Analysis Report, Project Quotation, etc.
+subtitle: "Project Title"
+author: "Stat IQ Consulting | [Consultant's Name]"
+format:
+  StatIQ-html: default
+  StatIQ-pdf: default
+  StatIQ-docx: default
+date: last-modified
+bibliography: references.bib
+execute: 
+  echo: false # Hide codes
+---
+
+```{r library-imports}
+#| warning: false
+#| message: false
+
+library(dplyr)
+library(tibble)
+library(ggplot2)
+```
+
+::: {.callout-note icon="false"}
+## Executive Summary
+
+Summarize the purpose, key findings, and recommendations in a few bullet points.
+:::
+
+
+## Introduction
+
+### Background
+
+Provide context for the analysis and reasons for conducting it.
+
+### Objectives
+
+State the specific goals or questions the analysis is intended to address.
+
+### Data Sources
+
+-   **Data Source 1**: Description
+-   **Data Source 2**: Description
+
+## Methodology
+
+### Data Preparation
+
+Explain the data cleaning steps taken, handling of missing values, etc.
+
+### Statistical Techniques
+
+Describe the methods used and any assumptions made. Provide clear explanations of chosen statistical techniques. [@montgomery2017design]
+
+## Results
+
+Use this section to present key findings, along with visualizations.
+
+| Column 1      | Column 2      |
+| ------------- | ------------- |
+| Cell 1, Row 1 | Cell 2, Row 1 |
+| Cell 1, Row 2 | Cell 1, Row 2 |
+
+## Conclusion
+
+Summarize key insights and offer actionable recommendations if applicable.
+
+## References

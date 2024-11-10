@@ -1,0 +1,157 @@
+/*-- scss:defaults --*/
+
+/* Color Variables */
+$primary-color: #0a1d5f;     /* Dark Blue */
+$secondary-color: #304faf;   /* Medium Blue */
+$accent-color: #d0e4ff;      /* Light Blue */
+$muted-color: #7d8fca;       /* Muted Blue */
+$background-accent: #f2f1df; /* Light Beige */
+
+/* Theme Variables */
+$body-bg: #ffffff;           /* White background */
+$body-color: $primary-color;
+$heading-color: $primary-color;
+$link-color: $secondary-color;
+$link-hover-color: $accent-color;
+$navbar-bg: transparent;     /* Remove background color from navbar */
+$navbar-color: $primary-color; /* Adjusted text color for visibility */
+$code-bg: $background-accent;
+$code-border: $muted-color;
+
+/*-- scss:rules --*/
+
+/* Body */
+body {
+  color: $body-color;
+  background-color: $body-bg;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  color: $heading-color;
+}
+
+/* Links */
+a {
+  color: $link-color;
+  text-decoration: none;
+  &:hover {
+    color: $link-hover-color;
+    text-decoration: underline;
+  }
+}
+
+/* Navbar */
+.navbar {
+  background-color: transparent; /* Remove background color */
+  .navbar-brand, .navbar-nav .nav-link {
+    color: $navbar-color !important; /* Ensure text is visible */
+    &:hover {
+      color: $accent-color !important;
+    }
+  }
+}
+
+.confidential {
+  background-color: $primary-color;
+  font-family: $headings-font-family !important;
+  border-radius: 0.375rem;
+  text-align: center;
+  color: white;
+  margin-top: 1.2rem;
+}
+
+.confidential p{
+  margin: 0;
+}
+
+.quarto-title-banner {
+  padding-top: 1em;
+  padding-bottom: 0px;
+}
+
+/* Title Block Styling */
+.quarto-title-block {
+  background-color: transparent !important; /* Ensure header has no background */
+}
+
+.title-logo {
+  width: 6rem;
+  height: auto;
+  margin-right: 1.2rem;
+}
+
+.title-block-container {
+  display: flex;
+  align-items: center;
+}
+
+.title-block-container::before {
+  content: "";
+  display: block;
+  width: 5px; /* Width of the vertical bar */
+  height: 100%;
+  //background-color: $primary-color;
+}
+
+.title-divider {
+  width: 2px;                /* Width of the vertical divider */
+  height: 100px;              /* Height of the divider */
+  background-color: $primary-color; /* Use primary color */
+  margin-right: 0.6rem;            /* Space between logo and text */
+}
+
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .title-block-container {
+    flex-direction: column;
+    align-items: center; /* Center-align the logo and content */
+    text-align: center;   /* Center-align the title text */
+  }
+
+  .title-logo {
+    margin-bottom: 10px;
+  }
+
+  .title-block-container::before {
+    width: 100%;
+    height: 5px; /* Horizontal bar for mobile */
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  
+  .title-divider {
+    width: 100%;             /* Full width for horizontal divider */
+    height: 2px;             /* Adjusted height for horizontal orientation */
+    margin: 10px 0;          /* Space above and below the divider */
+  }
+
+  .title-text {
+    align-items: center; /* Center the text within the container */
+  }
+}
+
+/* Code Blocks */
+pre, code {
+  background-color: $code-bg;
+  border: 1px solid $code-border;
+  font-family: $font-family-monospace;
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: $primary-color;
+  border-color: $primary-color;
+  &:hover {
+    background-color: darken($primary-color, 10%);
+    border-color: darken($primary-color, 10%);
+  }
+}
+
+/* Footer */
+.footer {
+  background-color: transparent; /* Match footer background to body */
+  color: $navbar-color;
+  text-align: center;
+}
